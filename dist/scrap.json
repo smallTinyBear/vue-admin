@@ -1,0 +1,21 @@
+{
+    "list": [{
+        "number": "1",
+        "noId": "BF20201203",
+        "status": "已报废",
+        "count": "1",
+        "date": "2020-03-22",
+        "reson": "无法使用",
+        "publcDate": "2020-03-04",
+        "people": "李擦"
+    }, {
+        "number": "2",
+        "noId": "BF20201203",
+        "status": "已报废",
+        "count": "1",
+        "date": "2020-03-22",
+        "reson": "无法使用",
+        "publcDate": "2020-03-04",
+        "people": "李擦"
+    }]
+}

@@ -1,0 +1,36 @@
+{
+    "list": [{
+        "number": "1",
+        "noId": "WX2020201246664",
+        "status": "已维修",
+        "count": "1",
+        "date": "2020-03-23",
+        "people": "李冰",
+        "content": "换螺丝",
+        "money": "20.00",
+        "publcDate": "2020-03-12",
+        "publicPeople": "丽丽"
+    }, {
+        "number": "2",
+        "noId": "WX2020201246664",
+        "status": "已维修",
+        "count": "1",
+        "date": "2020-03-23",
+        "people": "李冰",
+        "content": "换螺丝",
+        "money": "20.00",
+        "publcDate": "2020-03-12",
+        "publicPeople": "丽丽"
+    }, {
+        "number": "3",
+        "noId": "WX2020201246664",
+        "status": "已维修",
+        "count": "1",
+        "date": "2020-03-23",
+        "people": "李冰",
+        "content": "换螺丝",
+        "money": "20.00",
+        "publcDate": "2020-03-12",
+        "publicPeople": "丽丽"
+    }]
+}
