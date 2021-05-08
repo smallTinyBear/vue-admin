@@ -10,14 +10,11 @@
         <div class="base-info-container">
           <div class="left">
             <div class="handle-box">
-              <el-button
-                type="primary"
-                class="handle-del mr10"
-                @click="delAllSelection"
+              <el-button type="primary" class="handle-del mr10" @click="print"
                 >打印标签</el-button
               >
 
-              <el-button class="handle-del mr10" @click="delAllSelection"
+              <el-button class="handle-del mr10" @click="exportWord()"
                 >导出</el-button
               >
             </div>
@@ -27,10 +24,7 @@
               placeholder="资产编码、资产名称"
               class="handle-input mr10"
             ></el-input>
-            <el-button
-              type="primary"
-              icon="el-icon-search"
-              @click="handleSearch"
+            <el-button type="primary" icon="el-icon-search" @click="search"
               >搜索</el-button
             >
           </div>
@@ -115,10 +109,19 @@ export default {
         this.tableData = res.list;
       });
     },
+    print() {
+      this.$message.success("打印标签成功");
+    },
+    exportWord() {
+      this.$message.success("导出成功");
+    },
+    search() {
+      this.$message.success("搜索成功");
+    },
   },
-  created(){
-      this.getData()
-  }
+  created() {
+    this.getData();
+  },
 };
 </script>
 <style scoped>

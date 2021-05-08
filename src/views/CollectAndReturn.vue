@@ -29,7 +29,9 @@
                 placeholder="资产编码、资产名称"
                 class="handle-input mr10"
               ></el-input>
-              <el-button type="primary" icon="el-icon-search">搜索</el-button>
+              <el-button type="primary" icon="el-icon-search" @click="search"
+                >搜索</el-button
+              >
             </div>
           </div>
           <el-table
@@ -121,10 +123,7 @@
                 placeholder="资产编码、资产名称"
                 class="handle-input mr10"
               ></el-input>
-              <el-button
-                type="primary"
-                icon="el-icon-search"
-                @click="handleSearch"
+              <el-button type="primary" icon="el-icon-search" @click="search"
                 >搜索</el-button
               >
             </div>
@@ -212,6 +211,9 @@ export default {
       fetchReturnData().then((res) => {
         this.returnData = res.list;
       });
+    },
+    search() {
+      this.$message.success("搜索成功");
     },
   },
   created() {

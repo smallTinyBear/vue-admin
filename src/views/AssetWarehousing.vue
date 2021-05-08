@@ -143,7 +143,7 @@
         </div>
         <el-form-item>
           <el-button type="primary" @click="onSubmit">提交</el-button>
-          <el-button>取消</el-button>
+          <el-button @click="oncancel">取消</el-button>
         </el-form-item>
       </div>
     </div>
@@ -174,6 +174,14 @@ export default {
       },
     };
   },
+  methods:{
+    onSubmit(){
+      this.$message.success("提交成功");
+    },
+    oncancel(){
+      this.$message.success("取消成功");
+    }
+  }
 };
 </script>
 

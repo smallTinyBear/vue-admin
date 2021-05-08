@@ -28,7 +28,7 @@
             <el-button
               type="primary"
               icon="el-icon-search"
-              @click="handleSearch"
+              @click="search"
               >搜索</el-button
             >
           </div>
@@ -118,6 +118,9 @@ export default {
       fetchListData(this.query).then((res) => {
         this.tableData = res.list;
       });
+    },
+    search() {
+      this.$message.success("搜索成功");
     },
   },
   created() {

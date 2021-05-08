@@ -106,6 +106,10 @@
           </el-select>
         </el-form-item>
       </div> -->
+      <div style="margin-top:20px">
+        <el-button type="primary" @click="onSave">保存</el-button>
+        <el-button @click="onCancel">取消</el-button>
+      </div>
     </div>
   </div>
 </template>
@@ -125,6 +129,12 @@ export default {
       fetchListData(this.query).then((res) => {
         this.tableData = res.list;
       });
+    },
+    onSave() {
+      this.$message.success("保存成功");
+    },
+    onCancel() {
+      this.$message.success("取消成功");
     },
   },
   created() {
